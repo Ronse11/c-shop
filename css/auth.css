@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap");
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #001f3f;
+  --button-hover: #104e8f;
+  --landing-color: #f5f5f5;
+  --landing-color1: #ebebeb;
+  --shadow-color: #d3d3d3;
+  --shadow-text: #888585;
+  --shadow-secondary: #2d2d2d;
+  --primary-text: #0a0a0a;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.sign-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--landing-color);
+}
+
+.sign-box {
+  width: 23rem;
+  background-color: var(--primary-color);
+  padding: 50px 35px 30px 35px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  animation-name: fadeUp;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+.sign-name h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  color: var(--shadow-text);
+}
+
+.sign-box label {
+  font-size: 0.8rem;
+  color: var(--primary-text);
+}
+
+.sign-box input {
+  width: 100%;
+  height: 40px;
+  margin: 0 0 20px 0;
+  color: var(--shadow-text);
+  font-size: 0.8rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--landing-color1);
+}
+
+.sign-box input:focus {
+  border-bottom: 2px solid var(--shadow-text);
+}
+
+.sign-up {
+  width: 100%;
+  text-align: end;
+  margin: 35px 0 5px 0;
+  padding-right: 5px;
+}
+
+.sign-up a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: var(--secondary-shadow);
+}
+
+.sign-up a:hover {
+  text-decoration: underline;
+}
+
+.sign-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-button button {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: var(--primary-text);
+  color: var(--landing-color);
+  font-weight: 700;
+}
+
+.sign-button button:hover {
+  background: var(--shadow-secondary);
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Admin Page */
+.admin-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.admin-button button {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: var(--primary-text);
+  color: var(--landing-color);
+  font-weight: 700;
+}
+
+.admin-button button:hover {
+  background: var(--shadow-secondary);
+}
+
+
+
+/* Cart Page */
+.order-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--landing-color);
+}
+
+.order-content {
+  width: 40rem;
+  height: 25rem;
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 8px;
+  background-color: var(--landing-color1);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  animation-name: fadeUp;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+.order-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.order-img {
+  display: grid;
+  place-items: center;
+}
+
+.order-img img {
+  width: 20rem;
+  max-width: 20rem;
+}
+
+.cart-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.order-title h1 {
+  font-size: 2rem;
+}
+
+.btn-order a {
+    width: 100%;
+    height: 4rem;
+    text-decoration: none;
+    background-color: #001f3f;
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: var(--landing-color);
+}
+
+.btn-order a:nth-child(2) {
+    background: var(--landing-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-order a:hover {
+    background: var(--landing-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-order a:nth-child(2):hover {
+    background: var(--secondary-color);
+    color: var(--landing-color);
+}
+
+@media only screen and (max-width: 425px) {
+  .sign-box {
+    width: 19rem;
+  }
+  .order-content {
+    width: 18rem;
+    height: 25rem;
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 8px;
+    background-color: var(--landing-color1);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    animation-name: fadeUp;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  }
+  
+  .order-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .order-img {
+    display: grid;
+    place-items: center;
+  }
+  
+  .order-img img {
+    width: 10rem;
+    max-width: 10rem;
+  }
+  .order-title h1 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: .2rem;
+  }
+  
+  .btn-order a {
+      width: 100%;
+      height: 2rem;
+      text-decoration: none;
+      background-color: #001f3f;
+      display: grid;
+      place-items: center;
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      color: var(--landing-color);
+  }
+}
